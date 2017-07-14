@@ -41,6 +41,14 @@ namespace WcfServiceTest
             new List<string> { "what", "call", "you" }
         };
 
+        public static readonly List<List<string>> Nice = new List<List<string>>
+        {
+            new List<string> { "nice" },
+            new List<string> { "great" },
+            new List<string> { "awesome" },
+            new List<string> { "cool" }
+        };
+
         public static readonly List<List<string>> Status = new List<List<string>>
         {
             new List<string> { "how", "you" },
@@ -97,6 +105,13 @@ namespace WcfServiceTest
             "I'm Botterrr."
         };
 
+        public static readonly List<string> Nice = new List<string>
+        {
+            "Ain't it?",
+            "You betcha!",
+            "Happy to serve!"
+        };
+
         public static readonly List<string> Type = new List<string>
         {
             "I am a service.",
@@ -119,6 +134,7 @@ namespace WcfServiceTest
             new InputResponsePair(Responses.Default),
             new InputResponsePair("Hello", InputDescriptors.Hello, Responses.Hello),
             new InputResponsePair("Name", InputDescriptors.Name, Responses.Name),
+            new InputResponsePair("Nice", InputDescriptors.Nice, Responses.Nice),
             new InputResponsePair("Status", InputDescriptors.Status, Responses.Status),
             new InputResponsePair("Type", InputDescriptors.Type, Responses.Type),
             new InputResponsePair("Music", InputDescriptors.Music, Responses.Music)
